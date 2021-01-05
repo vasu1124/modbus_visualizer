@@ -100,7 +100,7 @@ def format_write_value(string, dtype='H', byte_order='>', word_order='>'):
         num_txt = string[1:]
 
     radix = RADIX_PREFIX.get(num_txt[:2], 10)
-    if radix is not 10:
+    if radix != 10:
         num_txt = string[2:]
 
     vals = []

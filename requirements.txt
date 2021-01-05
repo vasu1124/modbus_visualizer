@@ -1,5 +1,9 @@
-pymodbus==1.5.1
-PyQt5==5.10.1
-pyserial==3.4
-sip==4.19.8
-six==1.11.0
+packaging==20.8
+pymodbus==2.4.0
+pyparsing==2.4.7
+PyQt5==5.15.2
+PyQt5-sip==12.8.1
+pyserial==3.5
+sip==6.0.0
+six==1.15.0
+toml==0.10.2

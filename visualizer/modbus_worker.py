@@ -46,13 +46,13 @@ class ModbusWorker(QObject):
         if self.client:
             self.client.close()  # Properly close the client when re-configuring. Needed for Serial.
 
-        if settings["network_type"] is "tcp":
+        if settings["network_type"] == "tcp":
             host = settings["host"]
             port = settings["port"]
             self.client = ModbusTcpClient(host, port)
             self.console_message_available.emit(f"Attempting to connect to {host} on port {port}")
 
-        elif settings["network_type"] is "serial":
+        elif settings["network_type"] == "serial":
             port = settings["port"]
             protocol = settings["protocol"]
             baudrate = settings["baudrate"]
