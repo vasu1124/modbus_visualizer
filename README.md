@@ -26,7 +26,8 @@
 
 ### Install dependencies
 1. Clone the repository and checkout the develop branch (default)
-1. Install dependencies with `pip install -r requirements.txt` (can be in virtualenv)
+1. Install Python 3
+1. Install dependencies with `pip3 install -r requirements.txt` (can be in virtualenv)
 1. Install `pyqt5-tools` Global or user python installation (not virtualenv)
 
 ### Editing the `.ui` files
